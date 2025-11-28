@@ -1,0 +1,82 @@
+/* Contact Form Container */
+.contact-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input & Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: #121212;
+    border: 1px solid #1f1f1f;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 6px #00ffff55;
+}
+
+/* Textarea Specific */
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 12px 24px;
+    background: #01257d;
+    border: none;
+    border-radius: 8px;
+    color: #00ffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.contact-form button:hover {
+    background: #0139b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+}
+
+/* Status Message */
+.status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #00ffff;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}

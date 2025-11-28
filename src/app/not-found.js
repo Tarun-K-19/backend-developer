@@ -1,6 +1,6 @@
-import { Palette1 } from '../common/colors';
-import { NotFoundPng } from '../common/images';
-import '../styles/notFound.css';
+import { Palette1 } from './common/colors';
+import { NotFoundPng } from './common/images';
+import './styles/notFound.css';
 
 function NotFoundScreen() {
     return(
