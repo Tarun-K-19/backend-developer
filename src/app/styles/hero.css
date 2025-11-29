@@ -1,63 +1,39 @@
+.hero-bg {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .moving-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #01257D;
-    background-size: 300% 100%;
-  }
+  /* Background image + base color */
+  background:
+    url('/hero-bg.png') center/cover no-repeat,
+    #01257D;
+  /* fallback color */
 
-  .hero-bg {
-    width: 100%;
-    height: 100vh;
-    background: #01257D;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Layer 2: subtle moving wave lines */
-  .hero-bg::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-        120deg,
-        rgba(0, 255, 255, 0.05) 0px,
-        rgba(0, 255, 255, 0.05) 2px,
-        transparent 2px,
-        transparent 10px
-    );
-    opacity: 0.25;
-    animation: waveSlide 18s linear infinite;
-  }
-  
-  /* Animation for diagonal tech lines */
-  @keyframes waveSlide {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-300px); }
-  }
-  .typing-advanced {
-    font-size: 2.8rem;
-    font-weight: 700;
-    background: linear-gradient(180deg, #00FFFF, #01257D);
-    -webkit-background-clip: text;
-    color: transparent;
-    white-space: nowrap;
-  }
-  
-  .cursor {
-    display: inline-block;
-    margin-left: 2px;
-    width: 2px;
-    background-color: #00FFFF;
-    animation: blinkCursor 0.7s infinite;
-  }
-  
-  @keyframes blinkCursor {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-  
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section, .hero-text-section {
+  background-color: transparent !important;
+}
+
+.hero-text-section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-height: 120px;
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/typing.css';
 
 export default function TypingEffect({ words, typingSpeed = 120 }) {
     const [text, setText] = useState("");

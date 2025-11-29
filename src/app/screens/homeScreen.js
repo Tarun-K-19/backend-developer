@@ -1,15 +1,15 @@
 "use client"
 
-import "../common/styles/themedBg.css";
-import "../common/styles/themedBorder.css";
-import "../styles/hero.css";
 import ExperienceCard from "../components/experienceCard";
 import NavBar from "../components/navbar";
-import { fetchEducationData, fetchExperienceData } from "../common/services/dataServices";
 import Heading from "../components/heading";
 import Hero from "../components/hero";
 import EducationCard from "../components/educationCard";
 import ContactForm from "../components/contactForm";
+import {
+    fetchEducationData,
+    fetchExperienceData,
+} from "../common/services/dataServices";
 
 
 function HomeScreen() {

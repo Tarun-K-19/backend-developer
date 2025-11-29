@@ -10,7 +10,7 @@ export async function POST(req) {
 
         const response = await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
-            to: "prj284@iitpkd.ac.in",
+            to: process.env.ADMIN_EMAIL,
             subject: `New Message from ${name}`,
             html: `
                 <h2>New Contact Message</h2>

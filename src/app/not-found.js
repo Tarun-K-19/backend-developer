@@ -1,5 +1,5 @@
 import { Palette1 } from './common/colors';
-import { NotFoundPng } from './common/images';
+import { NotFound } from './common/images';
 import './styles/notFound.css';
 
 function NotFoundScreen() {
@@ -13,7 +13,7 @@ function NotFoundScreen() {
                 textAlign: 'center'
             }}
         >
-                    <img src={NotFoundPng} alt="Not Found - 404" className='not-found-banner'/>
+                    <img src={NotFound} alt="Not Found - 404" className='not-found-banner'/>
             <div
                 style={{
                     flexDirection: "row",
