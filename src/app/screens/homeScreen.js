@@ -5,7 +5,7 @@ import NavBar from "../components/navbar";
 import Heading from "../components/heading";
 import Hero from "../components/hero";
 import EducationCard from "../components/educationCard";
-import ContactForm from "../components/contactForm";
+import Footer from "../components/footer";
 import {
     fetchEducationData,
     fetchExperienceData,
@@ -44,7 +44,7 @@ function HomeScreen() {
                     <EducationCard key={index} education={exp} />
                 ))}
             </div>
-            <ContactForm />
+            <Footer />
         </div>
     );
 }

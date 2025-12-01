@@ -1,5 +1,6 @@
 import { education } from "../data/education";
 import { experiences } from "../data/experiences";
+import { heroInfo } from "../data/heroInfo";
 
 export function fetchExperienceData() {
     try {
@@ -13,6 +14,15 @@ export function fetchExperienceData() {
 export function fetchEducationData() {
     try {
         return education;
+    } catch (error) {
+        console.error("Failed to fetch education data:", error);
+        return [];
+    }
+}
+
+export function fetchHeroInfo() {
+    try {
+        return heroInfo;
     } catch (error) {
         console.error("Failed to fetch education data:", error);
         return [];
