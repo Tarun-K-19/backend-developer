@@ -1,5 +1,5 @@
 import "../styles/experience.css";
-import "../common/styles/themedBorder.css";
+import "../utils/styles/themedBorder.css";
 
 function ExperienceCard(props) {
     const experience = props.experience;

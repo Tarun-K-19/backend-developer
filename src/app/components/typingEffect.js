@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+<<<<<<< HEAD
 import '../styles/typing.css';
 
 export default function TypingEffect({
@@ -10,12 +11,18 @@ export default function TypingEffect({
     const [text, setText] = useState("");
     const [wordIndex, setWordIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
+=======
+
+export default function TypingEffect({ words, typingSpeed = 120 }) {
+    const [text, setText] = useState("");
+>>>>>>> 939201429fc14d3bd0a38198750af7dbfdcfd517
 
     useEffect(() => {
         const currentWord = words;
 
         let timer;
 
+<<<<<<< HEAD
         if (!isDeleting) {
             // typing
             timer = setTimeout(() => {
@@ -39,6 +46,14 @@ export default function TypingEffect({
 
         return () => clearTimeout(timer);
     }, [text, isDeleting, words, wordIndex, typingSpeed, deleteSpeed, delay]);
+=======
+        timer = setTimeout(() => {
+            setText(currentWord.substring(0, text.length + 1));
+        }, typingSpeed);
+
+        return () => clearTimeout(timer);
+    }, [text, words, typingSpeed]);
+>>>>>>> 939201429fc14d3bd0a38198750af7dbfdcfd517
 
     return (
         <span className="typing-advanced">

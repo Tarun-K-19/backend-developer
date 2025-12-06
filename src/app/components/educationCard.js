@@ -1,5 +1,5 @@
 import "../styles/education.css";
-import "../common/styles/themedBorder.css";
+import "../utils/styles/themedBorder.css";
 
 function EducationCard(props) {
     const education = props.education;

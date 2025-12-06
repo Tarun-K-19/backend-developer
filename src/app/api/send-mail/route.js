@@ -10,7 +10,12 @@ export async function POST(req) {
 
         const response = await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
+<<<<<<< HEAD
             to: process.env.ADMIN_EMAIL,
+=======
+            to: "prj284@iitpkd.ac.in",
+            cc: [email],
+>>>>>>> 939201429fc14d3bd0a38198750af7dbfdcfd517
             subject: `New Message from ${name}`,
             html: `
                 <h2>New Contact Message</h2>
